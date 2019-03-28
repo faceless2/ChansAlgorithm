@@ -11,6 +11,7 @@ public class Chans {
     private static final int RIGHT_TURN = -1;
     private static final int LEFT_TURN = 1;
     private static final int COLINEAR = 0;
+    // Note: the java.awt.Point class is used to store a pair of ints. They're not geometric points.
 
     /**
      * Returns the index of the point to which the tangent is drawn from point p.
