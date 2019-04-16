@@ -27,7 +27,7 @@ public class Chans {
         int l_after = orientation(p, v.get(0), v.get((l + 1) % v.size()));
         while (l < r) {
             int c = (l + r) >> 1;
-            int c_before = orientation(p, v.get(c), v.get((c - 1) % v.size()));
+            int c_before = orientation(p, v.get(c), v.get((c + r - 1) % v.size()));
             int c_after = orientation(p, v.get(c), v.get((c + 1) % v.size()));
             int c_side = orientation(p, v.get(l), v.get(c));
             if (c_before != RIGHT_TURN && c_after != RIGHT_TURN) {
